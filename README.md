@@ -35,5 +35,5 @@ Manzuuuu &lt;3 Zaheebaaaaa
     - With each heartbeat, I make a silent promise – to love you today, tomorrow, and forever.
 
 Forever and Always,
-[Zaheebaaaaaa]
+Zaheebaaaaa
 
