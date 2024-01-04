@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<style>
+		body::before {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			object-fit: contain;
+			background-image: url('Hand%202.jpg'); /* Replace with your image path */
+			filter: blur(5px); /* Adjust the blur effect as needed */
+			z-index: -1; /* Place it behind other content */
+		}
+	</style>
+
+	
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +24,25 @@
     <title>Apology to Manzuu</title>
 </head>
 <body>
+
     <div class="apology-container">
         <h1 class="apology-text">I am sorry Manzuu</h1>
 		<h1 class="apology-text">I love you ❤️</h1>
         <div class="buttons-container">
-            <button class="ok-button">It's okay Zaheebaaaaaaa</button>
+            <button class="ok-button" id="openPageButton">It's okay Zaheebaaaaaaa</button>
+
+			<script>
+			  document.getElementById('openPageButton').addEventListener('click', function() {
+				// Fade out the entire page
+				document.body.style.opacity = 0;
+
+				// Navigate to the target page after the transition completes
+				setTimeout(function() {
+				  window.location.href = 'main.html'; // Update with your actual filename or path
+				}, 500); // Adjust the timeout value to match the transition duration
+			  });
+			</script>
+
 			
 			<button class="not-ok-button" id="run-away-btn">It's not okay Zaheeb</button>
 
