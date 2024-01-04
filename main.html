@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Message</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #blur-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: none;
+      filter: blur(5px);
+      transition: filter 0.5s ease-in-out;
+    }
+
+    #message-container {
+      text-align: center;
+      z-index: 1;
+    }
+
+    #message {
+      color: white;
+	  font-family: 'Great Vibes', cursive;
+	  font-size: 30px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+	  display: block;
+      transition: background-color 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <img src="Hand%201.jpg" alt="background" id="blur-background">
+  <div id="message-container">
+	<p id="message" style="color: #FFE569; font-size: 90px"><strong>Manzuuuuuuuu <span style="color: red;">&hearts;</span> Zaheebaaaaaaaa</strong></p>
+    <p id="message"><strong style="color: white;">Smile <span style="color: red;">Manzuu</span>...</strong> Because you have the best and the most beautiful smile in this damn world!!! &#128536;</p>
+	<p id="message">Choro bhi yeh gussa.. Ab toh maan jaao na!!! \y/ <span style="color: red;">&hearts;</span></p>
+  </div>
+
+  <script>
+    // Add JavaScript todo
+  </script>
+</body>
+</html>
