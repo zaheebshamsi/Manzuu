@@ -3,17 +3,20 @@ body {
     place-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #FFD700;
+	opacity: 1; /* Start with full opacity */
+    transition: opacity 1s ease-in-out;
 }
 
 .apology-container {
     text-align: center;
+	position: relative; /* Make the container relative to position the child elements */
+	z-index: 1; /* Bring the container above the background */
 }
 
 .apology-text {
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    color: #333;
+    color: #C0C0C0;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 0; /* Initially set opacity to 0 */
@@ -44,6 +47,7 @@ body {
     transition: background-color 0.3s ease;
     background-color: #000000;
     color: #FFFFFF;
+	border: 2px solid #FFFFFF;
 }
 
 .ok-button {
