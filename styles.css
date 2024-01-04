@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFD700;
+}
+
+.apology-container {
+    text-align: center;
+}
+
+.apology-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: appear 1s forwards 1s; /* Appear animation with a delay */
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: appear 1s forwards 3s; /* Appear animation with a delay */
+}
+
+.ok-button, .not-ok-button {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.ok-button {
+    grid-column: 2;
+}
+
+.not-ok-button {
+    grid-column: 4;
+}
+
+.not-ok-button:hover {
+    animation: runAway 2s infinite;
+}
+
+@keyframes runAway {
+    to {
+        transform: translateX(300px);
+    }
+}
